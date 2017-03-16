@@ -1,7 +1,8 @@
 (function () {
 	'use strict';
 	angular.module('support', [
-		'routes'
+		'routes',
+		'ui.bootstrap'
 	]);
 
 	/* @ngInject */
@@ -11,7 +12,7 @@
 
 	/* @ngInject */
 	function run() {
-		
+
 	}
 
 	angular.module('support').config(config);

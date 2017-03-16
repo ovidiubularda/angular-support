@@ -1,0 +1,13 @@
+.main-sidebar {
+    .panel-default {
+        .panel-heading {
+            background-color: $sidebarColor;
+            border-color: $sidebarColor;
+        }
+    } 
+
+    .panel {
+        border: none;
+    }
+}
+    

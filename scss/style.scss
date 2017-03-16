@@ -3,7 +3,6 @@
 
 
 @import 'include/variables';
-//@import 'vendor/bootstrap/_font-awesome.min';
 @import 'vendor/adminlte/_AdminLTE';
 @import 'vendor/adminlte/green';
 @import 'vendor/adminlte/skin-green';
@@ -13,4 +12,6 @@
 @import 'include/ticket';
 @import 'include/user';
 
+
 @import "common";
+@import "sidebar";

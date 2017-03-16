@@ -26,19 +26,17 @@
                 <ul class="treeview-menu">
                     <li>
                         <a href="/tickets">
-                            <i class="fa fa-life-ring"></i>
-                            View Tickets
+                            <i class="fa fa-life-ring"></i> View Tickets
                         </a>
                     </li>
                     <li>
                         <a href="/tickets/create">
-                            <i class="fa fa-plus"></i>
-                            Create Ticket
+                            <i class="fa fa-plus"></i> Create Ticket
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="treeview <%= licenses %>">
+            <li class="treeview">
                 <a href="#">
                     <i class="fa fa-paw"></i>
                     <span>Licenses</span>
@@ -49,31 +47,75 @@
                 <ul class="treeview-menu">
                     <li>
                         <a href="/licenses">
-                            <i class="fa fa-dashboard"></i>
-                            Dashboard
+                            <i class="fa fa-dashboard"></i> Dashboard
                         </a>
                     </li>
                     <li>
                         <a href="/licenses/p3">
-                            <i class="fa fa-plus"></i>
-                            Add Serial
+                            <i class="fa fa-plus"></i> Add Serial
                         </a>
                     </li>
                     <li>
                         <a href="/licenses/p3/files">
-                            <i class="fa fa-file"></i>
-                            Files
+                            <i class="fa fa-file"></i> Files
                         </a>
                     </li>
                     <li>
                         <a href="/licenses/p3/all">
-                            <i class="fa fa-list"></i>
-                            All Serials
+                            <i class="fa fa-list"></i> All Serials
                         </a>
                     </li>
                 </ul>
             </li>
+
+            <li class="treeview">
+                <uib-accordion close-others="true">
+                    <div uib-accordion-group is-open="true" is-disabled="false">
+                        <uib-accordion-heading>
+                            <a href="#">
+                                <i class="fa fa-life-ring"></i>
+                                <span>Tickets</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                        </uib-accordion-heading>
+                        <ul class="panel-collapse collapse" uib-collapse="false">
+                            <li>
+                                <a href="/tickets">
+                                    <i class="fa fa-life-ring"></i> View Tickets
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/tickets/create">
+                                    <i class="fa fa-plus"></i> Create Ticket
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </uib-accordion>
+            </li>
+
         </ul>
-        </ul>
+
+
+
+
+
     </section>
 </aside>
+
+<script type="text/ng-template" id="group-template.html">
+    <div class="panel-heading">
+        <h4 class="panel-title" style="color:#fa39c3">
+            <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+                <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+            {{heading}}
+          </span>
+            </a>
+        </h4>
+    </div>
+    <div class="panel-collapse collapse" uib-collapse="!isOpen">
+        <div class="panel-body" style="text-align: right" ng-transclude></div>
+    </div>
+</script>
