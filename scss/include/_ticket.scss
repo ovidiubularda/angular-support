@@ -1,0 +1,87 @@
+/*
+* _ticket.scss
+* Ticket-related styling
+ */
+
+.ticket-list {
+    .ticket-details {
+        td {
+            vertical-align:middle;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .ticket-subject a {
+            color: #333;
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+
+        .unread {
+            font-weight: bold;
+        }
+
+        .ticket-id {
+            color: #999;
+        }
+
+        .ticket-author-img {
+            margin: 0 auto;
+            width: 52px;
+            padding: 2px;
+            border: 2px solid $primary;
+        }
+    }
+}
+
+.ticket-recent-activity {
+
+    .col-md-3 {
+        padding-left: 15px;
+        padding-right: 8px;
+    }
+
+    .author-img {
+        margin: 0 auto;
+        width: 52px;
+        padding: 2px;
+        border: 2px solid $primary;
+    }
+
+    hr.border {
+        content: " ";
+        height: 1px;
+        background-color: lighten($primary, 60%);
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.ticket-detail {
+    .ticket-header {
+        .ticket-status {
+            margin-left: 20px;
+            margin-top: -4px;
+        }
+    }
+}
+
+.ticket-priority {
+    .ticket-low {
+        color: #00a65a;
+    }
+
+
+    .ticket-medium {
+        color: #f39c12;
+    }
+
+    .ticket-high {
+        color: #dd4b39;
+    }
+}

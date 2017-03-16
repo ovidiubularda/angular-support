@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html ng-app="sample">
+<html lang="en" ng-app="support">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -11,19 +12,42 @@
     <!-- endbuild -->
     <!-- inject:css -->
 
+    <link rel="stylesheet" href="css/style.min.css">
+
     <!-- endinject -->
     <!-- build:dev -->
     <!-- bower:js -->
-
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-ui-router-title/angular-ui-router-title.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- inject:js -->
 
+    <script src="js/app.js"></script>
+
+    <script src="js/sidebar/sidebar.js"></script>
+
+    <script src="js/main/main.js"></script>
+
+    <script src="js/home/home.js"></script>
+
+    <script src="js/header/header.js"></script>
+
+    <script src="js/footer/footer.js"></script>
+
+    <script src="js/templates.js"></script>
+
+    <script src="js/routes.js"></script>
+
+    <script src="js/config.js"></script>
+
     <!-- endinject -->
 </head>
-<body>
-<div class="container-fluid">
+
+<body class="sidebar-mini skin-green">
     <ui-view id="main" role="main" name="main"></ui-view>
-</div>
 </body>
+
 </html>

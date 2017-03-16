@@ -4,7 +4,7 @@
     // jscs:disable maximumLineLength
     /* jshint ignore:start */
 
-    angular.module('sample')
+    angular.module('support')
         .constant('API_URL', 'http://base.api.url');
 
     /* jshint ignore:end */

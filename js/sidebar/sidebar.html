@@ -1,0 +1,79 @@
+<aside class="main-sidebar">
+    <section class="sidebar" style="height:auto;">
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="/img/default_user.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>fulname</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>
+
+        <ul class="sidebar-menu">
+            <li class="header">NAVIGATION</li>
+            <li>
+                <a href="/"><i class="fa fa-home"></i><span>Home</span></a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-life-ring"></i>
+                    <span>Tickets</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/tickets">
+                            <i class="fa fa-life-ring"></i>
+                            View Tickets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/tickets/create">
+                            <i class="fa fa-plus"></i>
+                            Create Ticket
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview <%= licenses %>">
+                <a href="#">
+                    <i class="fa fa-paw"></i>
+                    <span>Licenses</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="/licenses">
+                            <i class="fa fa-dashboard"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/licenses/p3">
+                            <i class="fa fa-plus"></i>
+                            Add Serial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/licenses/p3/files">
+                            <i class="fa fa-file"></i>
+                            Files
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/licenses/p3/all">
+                            <i class="fa fa-list"></i>
+                            All Serials
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </ul>
+    </section>
+</aside>

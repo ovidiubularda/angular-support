@@ -1,23 +1,16 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome";
 
-$mainColor: #7F207E;
-$mainFontColor: #F8F8F8;
-$mainLightGrey:	#B9B9BB;
-$mainDarkGrey: #95959A;
-$mainWhiteSmoke: #f5f5f5;
 
-body, html {
-    padding: 0;
-    margin: 0;
-    color: rgb(44, 48, 50);
-    font-size: 16px;
-    font-weight: 300;
-}
-.container-fluid{
-    padding: 0;
-}
-.main-wrapper {
-	min-height: 670px;
-}
+@import 'include/variables';
+//@import 'vendor/bootstrap/_font-awesome.min';
+@import 'vendor/adminlte/_AdminLTE';
+@import 'vendor/adminlte/green';
+@import 'vendor/adminlte/skin-green';
+@import 'include/global';
+@import 'include/admin';
+@import 'include/landing';
+@import 'include/ticket';
+@import 'include/user';
 
 @import "common";

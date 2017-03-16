@@ -1,6 +1,6 @@
 (function () {
 	'use strict';
-	angular.module('sample', [
+	angular.module('support', [
 		'routes'
 	]);
 
@@ -11,9 +11,9 @@
 
 	/* @ngInject */
 	function run() {
-
+		
 	}
 
-	angular.module('sample').config(config);
-    angular.module('sample').run(run);
+	angular.module('support').config(config);
+	angular.module('support').run(run);
 })();

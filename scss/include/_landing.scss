@@ -1,0 +1,93 @@
+/*
+* _landing.scss
+* Dashboard/landing page styling
+ */
+
+/* Tile styling */
+.boxes {
+    .small-box {
+        .inner {
+            padding: 6%;
+
+            h3 {
+                background: rgba(178, 210, 53,0.65);
+                border-radius: 3px;
+                font-weight: normal;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                text-align: center;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 64%;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+        }
+
+        &.tile {
+            background-size: cover;
+            background-position: center center;
+
+            .inner h3 {
+                background: transparentize($secondary, 0.2);
+            }
+
+            &.news {
+                background-image: url('/img/tile/news.jpg');
+            }
+
+            &.it {
+                background-image: url('/img/tile/it.jpg');
+            }
+
+            &.hr {
+                background-image: url('/img/tile/hr.jpg');
+            }
+
+            &.production {
+                background-image: url('/img/tile/production.jpg');
+            }
+
+            &.marketing {
+                background-image: url('/img/tile/marketing.jpg');
+            }
+
+            &.company {
+                background-image: url('/img/tile/company.jpg');
+            }
+        }
+
+        &.square {
+            position: relative;
+            width: 100%;
+
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }
+
+            .inner {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+
+        &:after {
+            border: 5px solid #fff;
+            border-radius: 2px;
+            content: " ";
+            display: block;
+            height: 96%;
+            left: 2%;
+            position: absolute;
+            top: 2%;
+            width: 96%;
+        }
+    }
+}
+/* end tile styling */

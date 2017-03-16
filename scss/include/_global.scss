@@ -1,0 +1,286 @@
+/*
+* _global.scss
+* Global application styling
+ */
+
+.content-wrapper {
+    margin-top: 50px;
+}
+
+.main-header {
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.main-header, .main-sidebar, .left-side {
+    position: fixed;
+}
+
+.main-footer {
+    .footer-logo {
+        height: 28px;
+    }
+
+    .pull-right {
+        a {
+            img {
+                &:hover {
+                    opacity: 0.65;
+                }
+            }
+        }
+    }
+}
+
+.login-page, .register-page {
+    .content-wrapper {
+        margin-top: 0;
+        background-image: url('/img/login2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .login-logo img:hover {
+            opacity: 0.70;
+        }
+    }
+}
+
+.progress-bar-green {
+    background-color: #B2D235;
+}
+
+.todo-list {
+    .green {
+        border-left-color: #B2D235;
+    }
+}
+
+.nav-tabs-custom.tab-green {
+    > .nav-tabs {
+        > li.active {
+            border-top-color: #B2D235;
+        }
+    }
+}
+
+.direct-chat-green {
+    .right {
+        > .direct-chat-text {
+            background: #B2D235;
+            border-color: #B2D235;
+
+            &:before, &:after {
+                border-left-color: #B2D235;
+            }
+        }
+    }
+}
+
+.bg-green,
+.callout.callout-green,
+.alert-green,
+.label-green,
+.modal-green .modal-body {
+    background-color: #B2D235 !important;
+}
+
+.bg-secondary,
+.callout.callout-secondary,
+.alert-secondary,
+.label-secondary,
+.modal-secondary .modal-body {
+    background-color: $secondary !important;
+    color: #fff;
+
+    i.fa {
+        color: #fff;
+    }
+}
+
+.text-green2 {
+    color: #B2D235 !important;
+}
+
+.bg-green-gradient {
+    background: #B2D235 !important;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B2D235), color-stop(1, #7F9F02)) !important;
+    background: -ms-linear-gradient(bottom, #B2D235, #7F9F02) !important;
+    background: -moz-linear-gradient(center bottom, #B2D235 0%, #7F9F02 100%) !important;
+    background: -o-linear-gradient(#7F9F02, #B2D235) !important;
+    color: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7F9F02', endColorstr='#B2D235', GradientType=0) !important;
+}
+
+.icheck {
+    > label {
+        padding-left: 20px;
+    }
+}
+
+.nav-tabs-custom {
+    > .nav-tabs {
+        > li {
+            &.active {
+                border-top-color: $primary;
+            }
+
+            &:hover {
+                background: $primary;
+            }
+        }
+    }
+}
+
+.nav-tabs-custom > .nav-tabs > li:hover > a,
+.skin-green .main-header .navbar .nav > li > a:hover,
+.skin-green .main-header .navbar .nav > li > a:hover,
+.skin-green .main-header .navbar .nav > li > a:active,
+.skin-green .main-header .navbar .nav > li > a:focus,
+.skin-green .main-header .navbar .nav .open > a,
+.skin-green .main-header .navbar .nav .open > a:hover,
+.skin-green .main-header .navbar .nav .open > a:focus,
+.skin-green .main-header .navbar .nav > .active > a{
+    color: #000033;
+}
+
+/* Navbar styling */
+
+.navbar-nav {
+    > .user-menu {
+        > .dropdown-menu {
+            li {
+                &.user-header {
+                    > p {
+                        color: transparentize($secondary, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* end navbar styling */
+
+/* Custom form styling */
+.form-control-feedback {
+    top: 0;
+}
+
+.form-group {
+    &.has-green {
+        label, .help-block {
+            color: $primary;
+        }
+
+        .form-control, .input-group-addon {
+            border-color: $primary;
+            box-shadow: none;
+        }
+    }
+}
+/* end form styling */
+
+/* Box styling */
+.box.box-primary {
+    border-top-color: $primary;
+}
+
+.box {
+    &.box-green {
+        border-top-color: #B2D235;
+    }
+
+    &.box-solid.box-green {
+        border: 1px solid #B2D235;
+    }
+
+    &#fullheight {
+        border-top: 0;
+        margin-bottom: 0;
+        padding-right: 15px;
+    }
+
+    &.box-dark {
+        border-top-color: $secondary;
+    }
+}
+
+/* end box styling */
+
+/* Buttons */
+.btn-primary {
+    background-color: #B2D235;
+    border-color: #7F9F02;
+}
+
+.btn-green {
+    background-color: $primary;
+    border-color: darken($primary, 10%);
+    color: $secondary;
+
+    &:hover, &:active, &:focus {
+        background-color: darken($primary, 10%);
+        color: $secondary;
+    }
+}
+
+.btn-like {
+    background-color: #f4f4f4;
+    color: #444;
+    border-color: #ddd;
+
+    &:hover, &:active, &:focus, &.hover {
+        background-color: #e7e7e7;
+    }
+}
+
+.btn-liked {
+    background-color: darken(#f4f4f4, 10%);
+    color: #444;
+    border-color: #ddd;
+}
+/* end button styling */
+
+/* Badge styling */
+.badge {
+    &.badge-large {
+        font-size: 85%;
+        padding: .4em .8em .4em;
+    }
+}
+
+.categories {
+    .badge {
+        &:hover {
+            opacity: 0.65;
+        }
+    }
+}
+/* end badge styling */
+
+/* Content styling */
+.content-header {
+    h1 {
+        display: inline-block;
+    }
+
+    .panel_toolbox {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+
+            a {
+                padding-bottom: 6px;
+
+                i {
+                    vertical-align: text-top;
+                }
+            }
+        }
+    }
+}
+/* end content styling */
+
