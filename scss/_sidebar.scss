@@ -9,5 +9,14 @@
     .panel {
         border: none;
     }
+
+    .panel-body {
+        background: $sidebarSecondaryColor;
+        border: none;
+    }
+
+    .panel-group .panel-heading+.panel-collapse>.panel-body {
+        border: none;
+    }
 }
     
